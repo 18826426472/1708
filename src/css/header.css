@@ -56,6 +56,18 @@
   line-height: 20px;
 }
 
+#header .headtop .sjb:hover div {
+  display: block;
+  z-index: 500;
+  background: #fff;
+}
+
+#header .headtop .gzbp:hover .gzbpbox {
+  display: block;
+  z-index: 500;
+  background: #fff;
+}
+
 #header .headtop .gzbp {
   position: relative;
 }
@@ -91,7 +103,7 @@
   border: 1px solid #ccc;
   position: absolute;
   top: 27px;
-  left: -3px;
+  left: -21px;
 }
 
 #header .headtop .bqsy dl dd {
@@ -104,6 +116,12 @@
   height: 14px;
   margin-left: 13px;
   margin-right: 3px;
+}
+
+#header .headtop .bqsy:hover dl {
+  display: block;
+  z-index: 500;
+  background: #fff;
 }
 
 #header .headtop .locations {
@@ -131,4 +149,188 @@
 #header .headtop .locations h4 ul a {
   display: inline-block;
   padding-right: 26px;
+}
+
+#header .headtop .locations.active {
+  display: block;
+  z-index: 900;
+  background: #fff;
+}
+
+#header .container .hc-c {
+  margin-left: 50px;
+  padding-top: 40px;
+}
+
+#header .container .hc-c input {
+  border: 2px solid #EE5533;
+  width: 516px;
+  height: 38px;
+  padding-left: 5px;
+  font-size: 18px;
+  line-height: 38px;
+  float: left;
+  margin-bottom: 6px;
+}
+
+#header .container .hc-c button {
+  background: #EE5533;
+  width: 80px;
+  height: 38px;
+  float: left;
+  margin-bottom: 6px;
+}
+
+#header .container .hc-c p {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+#header .container .hc-r {
+  padding-top: 30px;
+  padding-right: 35px;
+}
+
+#header .headfoot .goods h2 em {
+  display: inline-block;
+  width: 16px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 50px;
+  background: url("../imgaes/toolbar.png") no-repeat 0 -21px;
+}
+
+#header .headfoot .goods .product h3 em {
+  display: inline-block;
+  margin-top: 5px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url("../imgaes/icon.png") no-repeat -195px -171px;
+}
+
+#header .headfoot .goods .product h3 ul li {
+  float: left;
+  width: 30px;
+}
+
+#header .headfoot .goods .product-wrap h5 {
+  padding: 20px 0px;
+  border-bottom: 1px dashed #ccc;
+}
+
+#header .headfoot .goods .product-wrap h5 i a {
+  color: #CC2200;
+  margin-right: 70px;
+  font-size: 20px;
+}
+
+#header .headfoot .goods .product-wrap h5 a {
+  font-size: 16px;
+}
+
+#header .nav-list li {
+  height: 40px;
+}
+
+#header .nav-list li a {
+  display: block;
+  height: 40px;
+}
+
+#header .nav-list .headcar {
+  margin-left: 100px;
+  position: relative;
+}
+
+#header .nav-list .headcar em {
+  display: inline-block;
+  width: 29px;
+  height: 26px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-left: 10px;
+  background: url("../imgaes/toolbar.png") no-repeat -30px -13px;
+}
+
+#header .nav-list .headcar.active a {
+  background: pink;
+}
+
+#header .nav-list .headcar div {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: -44px;
+  width: 250px;
+  background: pink;
+}
+
+#header .nav-list .headcar div ul {
+  line-height: 30px;
+}
+
+#header .nav-list .headcar div ul li {
+  margin-left: 20px;
+  height: 50px;
+}
+
+#header #headr {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+
+#header #headr .head-rl {
+  text-align: center;
+  padding-top: 80px;
+  width: 37px;
+  height: 680px;
+  background: #181818;
+}
+
+#header #headr .head-rl span {
+  width: 100px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+#header #headr .head-rl span .carqty {
+  background: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+#header #headr .head-rl p {
+  padding: 10px;
+}
+
+#header #headr .head-rl i {
+  width: 36px;
+  height: 36px;
+  display: block;
+  line-height: 14px;
+  background: url("../imgaes/sbar_ico.png") no-repeat;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#header #headr .head-rl em {
+  border-top: 1px solid #ccc;
+  width: 36x;
+  height: 36px;
+  display: block;
+  background: url("../imgaes/sbar_ico.png") no-repeat -195px -171px;
+  margin: 0 auto;
+}
+
+#header .head-rr {
+  display: none;
+  width: 150px;
+  height: 760px;
+  background: #fff;
 }

@@ -1,0 +1,33 @@
+#head-main {
+  height: 2000px;
+  background: #fff;
+}
+
+#head-main #ban .banl {
+  background: red;
+  height: 549px;
+  width: 268px;
+  background: #ccc;
+}
+
+#head-main #ban .banc {
+  width: 800px;
+  height: 450px;
+  background: blue;
+}
+
+#head-main #ban .bancb ul {
+  width: 800px;
+  padding-top: 5px;
+}
+
+#head-main #ban .bancb ul li {
+  float: left;
+  margin-bottom: 5px;
+}
+
+#head-main #ban .banr {
+  background: blue;
+  width: 195px;
+  padding-right: 37px;
+}
