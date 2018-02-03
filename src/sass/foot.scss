@@ -1,0 +1,82 @@
+.comfooter{
+
+    .cmf-t{
+        background: #EE5533;
+        height:120px;
+        width: 100%;
+        .bbox{
+            width: 1000px;margin: 0 auto;
+            dl{
+               
+                  padding:10px;
+                float:left;text-align: center;
+                width: 196px;
+                height: 119px;
+                border-right:1px dashed #ccc;
+                &:nth-of-type(5){
+                    border-right:none;
+                }
+                 dt{
+
+                  background:url("../imgaes/foot.png") no-repeat;
+                  width: 60px;
+                  height: 56px;
+                  margin-left:67px;
+                
+                 }  
+                dd{
+                    color:#FFFFFF;font-size:12px;
+                    &.ft{
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+    }
+    .cmf-c{
+        background: #F3F3F3;
+        height:153px;
+        .cbox{
+            width:1000px;
+            margin: 0 auto;
+            dl{
+                float:left;
+                padding-right:60px;
+                padding-left:80px;
+                dd{
+                    font-size: 14px;
+                    line-height:18px;
+                }
+                dt{
+                    font-size:19px;
+                    line-height: 47px;
+                }
+            }
+        }
+    }
+    .cmf-b{
+        text-align: center;
+        p{
+            &:nth-of-type(1){
+
+            padding-top:15px;
+            }
+            font-size:12px;
+            a{
+                font-size: 14px;
+                margin-right:8px;
+            }
+            
+
+           
+        }
+        h2{
+             img{
+                margin-top:10px;
+                margin-left:5px;
+            
+            }
+        }
+    }
+}

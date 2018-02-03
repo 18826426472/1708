@@ -1,0 +1,115 @@
+.login{
+    height:100%;
+    weight:100%;
+    background:#F3F3F3;
+    #loginMain{
+        width: 992px;margin:0 auto;
+        h3{
+            height: 120px;
+            img{
+                height: 88px;width: 200px;
+                margin-right:10px;
+            }
+            span{
+                font-size: 32px;padding-left:20px;border-left:1px solid #ccc;  
+            }
+         }
+         .box{
+            padding:9px;background: #FFFFFF;
+           .logins{
+                padding-top:20px;
+                padding-right:30px;
+                div{
+                    border:1px solid #DDDDDD;
+                    width: 410px;height: 49px;
+                    
+                    padding:5px;
+
+                }
+                em{
+                    display: inline-block;height: 24px;width: 30px;background:url('../imgaes/login.png') no-repeat;
+
+                }
+                input{
+                    width: 200px;
+                    height: 30px;
+                }
+                .yzm{
+                    display:inline-block;
+                    padding-left: 34px;margin-top:20px;width: 204px;
+                    i.err{
+                        float:right;
+                        margin-top: 7px;
+                        display:inline-block;
+                        background:url('../imgaes/login.png') no-repeat -36px -33px;
+                        width: 20px;height: 20px;
+                    }
+                    i.suc{
+                         margin-top: 7px;
+                           display:inline-block;
+                        background:url('../imgaes/login.png') no-repeat -5px -33px;
+                        width: 20px;height: 20px;
+                    }
+                }
+                .iyzm{
+                    width: 67px;
+                }
+                h4{
+
+                   img{
+
+
+                    margin-left:20px;
+                    width:70px;
+                   height: 28px; 
+                   margin-right:30px;
+                    }
+                    button{
+                        background: #fff;
+                    }
+                }
+                p{
+                    padding-top:9px;
+                    font-size: 14px;
+                    padding-bottom:13px;
+                    a{
+                        display:inline-block;
+                        padding-left:10px;
+                        padding-right:10px;
+                        &:nth-of-type(2){
+                            border-right:1px solid #ccc;
+                        }
+                    }
+                }
+                .dlogin{
+                    width: 100%;font-size: 24px;
+                    background:#FF6655;
+                    color:#FFFFFF;
+                    line-height:50px;
+                }
+                .p1{
+                    height: 20px;
+                    border-bottom:1px solid #ccc;
+                    text-align:center; 
+                    span{
+                       
+                        line-height: 26px;
+                        background:#fff;
+                        padding-left:5px;
+                        padding-right: 5px;
+                    }
+                }
+                h5{
+                    text-align: center;
+                    font-size:14px;
+                    padding-top:20px;
+                   
+                    span{
+                       
+                         padding:0px 5px;
+                    }
+                }
+          }   
+         }
+    }
+}

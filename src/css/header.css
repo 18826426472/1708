@@ -1,0 +1,134 @@
+#header .headtop {
+  position: relative;
+  width: 100%;
+  height: 37px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 33px;
+  margin: 0 auto;
+}
+
+#header .headtop span em {
+  width: 9px;
+  height: 15px;
+  display: inline-block;
+  margin-left: 20px;
+  background: url("../imgaes/toolbar.png") no-repeat -31px 0;
+}
+
+#header .headtop ul {
+  float: right;
+  padding-top: 13px;
+}
+
+#header .headtop ul li {
+  float: left;
+  line-height: 14px;
+  font-size: 14px;
+}
+
+#header .headtop ul li span {
+  border-right: 1px solid #ccc;
+  padding: 0 15px;
+}
+
+#header .headtop ul li a img {
+  margin-left: 8px;
+}
+
+#header .headtop .sjb {
+  position: relative;
+}
+
+#header .headtop .sjb div {
+  display: none;
+  position: absolute;
+  top: 26px;
+  left: -100px;
+  width: 250px;
+  height: 130px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+#header .headtop .sjb div p {
+  padding-left: 120px;
+  line-height: 20px;
+}
+
+#header .headtop .gzbp {
+  position: relative;
+}
+
+#header .headtop .gzbp .gzbpbox {
+  display: none;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 27px;
+  left: -200px;
+  width: 400px;
+  padding: 5px;
+}
+
+#header .headtop .gzbp .gzbpbox p {
+  padding-left: 120px;
+}
+
+#header .headtop .gzbp .gzbpbox .gzbpboxl {
+  width: 50%;
+}
+
+#header .headtop .gzbp .gzbpbox .gzbpboxr {
+  width: 50%;
+}
+
+#header .headtop .bqsy {
+  position: relative;
+}
+
+#header .headtop .bqsy dl {
+  display: none;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 27px;
+  left: -3px;
+}
+
+#header .headtop .bqsy dl dd {
+  width: 100px;
+  line-height: 20px;
+}
+
+#header .headtop .bqsy dl dd em {
+  width: 20px;
+  height: 14px;
+  margin-left: 13px;
+  margin-right: 3px;
+}
+
+#header .headtop .locations {
+  display: none;
+  position: absolute;
+  border: 1px solid #ccc;
+  top: 36px;
+  left: 160px;
+  width: 400px;
+}
+
+#header .headtop .locations .locat {
+  color: red;
+}
+
+#header .headtop .locations h4 {
+  height: 60px;
+  border-bottom: 1px dashed #ccc;
+}
+
+#header .headtop .locations h4 ul {
+  float: right;
+}
+
+#header .headtop .locations h4 ul a {
+  display: inline-block;
+  padding-right: 26px;
+}

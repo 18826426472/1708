@@ -53,8 +53,9 @@ s,i,em,u,b{font-style:normal;text-decoration:none;}
 }
 .container { 
  /*版心 提取 */
-    width: 1100px;
+    width: 1200px;
     margin:0 auto;
+   
 }
 .all{
     min-height:980px;

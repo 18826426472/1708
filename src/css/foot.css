@@ -1,0 +1,87 @@
+.comfooter .cmf-t {
+  background: #EE5533;
+  height: 120px;
+  width: 100%;
+}
+
+.comfooter .cmf-t .bbox {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.comfooter .cmf-t .bbox dl {
+  padding: 10px;
+  float: left;
+  text-align: center;
+  width: 196px;
+  height: 119px;
+  border-right: 1px dashed #ccc;
+}
+
+.comfooter .cmf-t .bbox dl:nth-of-type(5) {
+  border-right: none;
+}
+
+.comfooter .cmf-t .bbox dl dt {
+  background: url("../imgaes/foot.png") no-repeat;
+  width: 60px;
+  height: 56px;
+  margin-left: 67px;
+}
+
+.comfooter .cmf-t .bbox dl dd {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.comfooter .cmf-t .bbox dl dd.ft {
+  font-size: 14px;
+}
+
+.comfooter .cmf-c {
+  background: #F3F3F3;
+  height: 153px;
+}
+
+.comfooter .cmf-c .cbox {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.comfooter .cmf-c .cbox dl {
+  float: left;
+  padding-right: 60px;
+  padding-left: 80px;
+}
+
+.comfooter .cmf-c .cbox dl dd {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.comfooter .cmf-c .cbox dl dt {
+  font-size: 19px;
+  line-height: 47px;
+}
+
+.comfooter .cmf-b {
+  text-align: center;
+}
+
+.comfooter .cmf-b p {
+  font-size: 12px;
+}
+
+.comfooter .cmf-b p:nth-of-type(1) {
+  padding-top: 15px;
+}
+
+.comfooter .cmf-b p a {
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.comfooter .cmf-b h2 img {
+  margin-top: 10px;
+  margin-left: 5px;
+}

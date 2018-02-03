@@ -1,0 +1,107 @@
+#header{
+    .headtop{
+        position:relative;
+        width: 100%;
+        height: 37px;
+        border-bottom:1px solid #ccc;font-size: 14px;
+        line-height:33px;margin: 0 auto;
+        span{
+            em{
+                width: 9px;height:15px;display:inline-block;margin-left: 20px;
+                background:url("../imgaes/toolbar.png") no-repeat -31px 0;
+            }
+        }
+        ul{ 
+            float:right;padding-top:13px;
+            li{ 
+                float:left;line-height:14px;font-size: 14px;
+                span{
+                   border-right:1px solid #ccc;padding:0 15px;
+                }
+                a{
+                   img{
+                    margin-left:8px;
+                   }
+
+                }
+            }
+        }
+        .sjb{
+            position:relative;
+            div{
+                display:none;
+                position:absolute;top:26px;left:-100px;
+                width:250px;height: 130px;
+                border:1px solid #ccc;padding:5px;
+                p{
+                    padding-left:120px;
+                    line-height:20px;
+                }
+            }
+            
+    }
+        .gzbp{
+            position:relative;
+            .gzbpbox{
+                display:none;
+                border:1px solid #ccc;
+                position:absolute;top:27px;left:-200px;
+                width: 400px;
+                padding:5px;
+                p{
+                    padding-left:120px;
+                }
+                .gzbpboxl{
+                    width: 50%;
+                }
+                .gzbpboxr{
+                    width: 50%;
+                }
+            }
+        }
+        .bqsy{
+            position:relative;
+            dl{
+                display:none;
+                border:1px solid #ccc;
+                position:absolute;
+                top:27px;left:-3px;
+
+                dd{
+                    width: 100px;
+                    line-height:20px;
+                    em{
+                        width: 20px;
+                        height: 14px;
+                        margin-left:13px;
+                        margin-right:3px;
+                    }
+                }
+            }
+        }
+        .locations{
+            display:none;
+            position:absolute;
+            border:1px solid #ccc;
+            top:36px;left:160px;
+            width:400px;
+            .locat{
+                color:red;
+            }
+            h4{
+                height:60px;
+                border-bottom:1px dashed #ccc;
+                ul{
+                    float:right;
+                    a{  
+                        display:inline-block;
+                        padding-right:26px;
+
+
+                    }
+                }
+            }
+        }
+
+    }
+}

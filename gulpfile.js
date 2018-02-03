@@ -11,7 +11,7 @@ gulp.task('compileSass',function(){
 
 	// 通过管道传输
 	// 编译
-.pipe(sass({outputStyle:'expanded'}))						//编译后的文件流 css
+ .pipe(sass({outputStyle:'expanded'}))						//编译后的文件流 css
 
 
 	// 输出到硬盘
