@@ -1,0 +1,40 @@
+﻿[
+	{
+		"id":"P001",
+		"name":"mo*..",
+		"title":"很好肉多看得见，猫咪爱吃希望多搞活动，秒杀从没的手、太浪费时间了！！！",
+		"img1":"./imgaes/none1.gif",
+		"img2":"./imgaes/rp1.jpg",
+		"qty":10,
+		"fen":5.0
+		
+	},
+	{
+		"id":"P002",
+		"name":"mo*..",
+		"title":"很好肉多看得见，猫咪爱吃希望多搞活动，秒杀从没的手、太浪费时间了！！！",
+		"img1":"./imgaes/pb1.gif",
+		"img2":"./imgaes/pb2.jpg",
+		"qty":10,
+		"fen":5.0
+	},
+	{
+		"id":"P003",
+		"name":"mo*..",
+		"title":"很好肉多看得见，猫咪爱吃希望多搞活动，秒杀从没的手、太浪费时间了！！！",
+		"img1":"./imgaes/pb1.gif",
+		"img2":"./imgaes/pb2.jpg",
+		"qty":10,
+		"fen":5.0
+	},
+	{
+		"id":"P004",
+		"name":"mo*..",
+		"title":"很好肉多看得见，猫咪爱吃希望多搞活动，秒杀从没的手、太浪费时间了！！！",
+		"img1":"./imgaes/none1.gif",
+		"img2":"./imgaes/rp1.jpg",
+		"qty":10,
+		"fen":5.0
+	}
+
+]

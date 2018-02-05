@@ -5,7 +5,7 @@ require.config({
         'headser':'header',
         'ban':'jquery.lxCarousel'
     },shim:{'head':['jquery'],
-            'headser':['jquery'],
+            'headser':['jquery','head'],
             'ban':['jquery'] 
             }
 

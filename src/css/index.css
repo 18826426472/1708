@@ -135,6 +135,10 @@
   margin-bottom: 10px;
 }
 
+#head-main #salegoods #mains .allgood h3 {
+  border-bottom: 1px solid red;
+}
+
 #head-main #salegoods #mains .allgood h3 em {
   margin-top: 5px;
   width: 24px;
@@ -145,7 +149,7 @@
 }
 
 #head-main #salegoods #mains .allgood h3 span {
-  padding-right: 30px;
+  padding-right: 80px;
 }
 
 #head-main #salegoods #mains .allgood h3 ul li {
@@ -232,4 +236,113 @@
 
 .allgoodr ul li span {
   color: red;
+}
+
+#mainFooter {
+  padding: 10px 0px;
+  padding-left: 80px;
+  height: 300px;
+  width: 1200px;
+}
+
+#mainFooter em {
+  float: left;
+  margin-top: 5px;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url(../imgaes/icon.png) no-repeat -113px -38px;
+}
+
+#mainFooter h3 {
+  font-size: 24px;
+  color: #EE5533;
+  line-height: 32px;
+  border-bottom: 1px solid #EE5533;
+}
+
+#mainFooter .Footerl em {
+  float: none;
+  margin-top: 5px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url(../imgaes/icon.png) no-repeat -113px -38px;
+}
+
+#mainFooter .Footerl ul {
+  width: 900px;
+}
+
+#mainFooter .Footerl ul li {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 450px;
+  position: relative;
+  float: left;
+}
+
+#mainFooter .Footerl ul li p {
+  width: 334px;
+}
+
+#mainFooter .Footerl ul li .gouyin i {
+  display: inline-block;
+  height: 17px;
+  float: left;
+  padding-left: 80px;
+  background: url(../imgaes/icon.png) no-repeat 0 -77px;
+}
+
+#mainFooter .Footerl ul li div.fr {
+  position: absolute;
+  top: 19%;
+  right: 6%;
+}
+
+#mainFooter .Footerl ul li div.fr img {
+  width: 60px;
+  height: 60px;
+}
+
+#mainFooter .Footerl div.fl {
+  width: 50px;
+  height: 100px;
+}
+
+#mainFooter .Footerl div.fl img {
+  width: 40px;
+  height: 40px;
+}
+
+#mainFooter .Footerr {
+  width: 180px;
+}
+
+#mainFooter .Footerr div {
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+  padding-top: 20px;
+  height: 110px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#mainFooter .Footerr div span {
+  width: 16px;
+  height: 14px;
+  display: inline-block;
+  background: url(../imgaes/icon.png) no-repeat -195px -77px;
+  margin-left: 6px;
+}
+
+#mainFooter .Footerr div button {
+  width: 80px;
+  border: 1px solid #ccc;
+  height: 30px;
+  background: url(../imgaes/icon.png) no-repeat -195px -96px;
 }

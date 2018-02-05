@@ -106,6 +106,7 @@
         #mains{
            .allgood{
                 h3{
+                    border-bottom:1px solid red;
                     em{
                         
                             margin-top: 5px;
@@ -116,7 +117,7 @@
                             background: url(../imgaes/icon.png) no-repeat -195px -171px;
             
                     }
-                    span{padding-right:30px;}
+                    span{padding-right:80px;}
                     ul{ 
 
                         li{
@@ -182,5 +183,95 @@
                 color:red;
             }
         }
+    }
+}
+#mainFooter{
+    padding:10px 0px;padding-left:80px;
+    height: 300px;width: 1200px;
+     em{
+             
+                            float:left;
+                            margin-top: 5px;
+                            width: 70px;
+                            height: 70px;
+                            display: inline-block;
+                            margin-right: 5px;
+                            background: url(../imgaes/icon.png)  no-repeat -113px -38px;;
+            
+                    
+        }
+    h3{
+        font-size:24px;color:#EE5533;line-height:32px;  border-bottom:1px solid #EE5533;
+    }
+    .Footerl{
+      
+        em{
+             
+                            float:none;
+                            margin-top: 5px;
+                            width: 24px;
+                            height: 24px;
+                            display: inline-block;
+                            margin-right: 5px;
+                            background: url(../imgaes/icon.png)  no-repeat -113px -38px;
+            
+                    
+        }
+        ul{
+            width: 900px;
+            li{
+                padding:20px;font-size:16px;line-height:20px;width: 450px;position:relative;
+                float:left;
+                p{
+                    width:334px;
+                }
+                .gouyin{
+                    i{
+                    display:inline-block;height: 17px;float:left;
+                     padding-left:80px;background: url(../imgaes/icon.png) no-repeat 0 -77px;
+                        
+                    }
+                  
+                }
+                div.fr{
+                    position:absolute;top:19%;right:6%;
+                    img{
+                        width: 60px;height: 60px;
+                    }
+                }
+            }
+        }
+         div.fl{
+            width: 50px;height:100px;
+            img{
+                 width: 40px;
+                 height: 40px;
+            }
+         }   
+
+
+    }
+    .Footerr{
+        
+        // margin-right:-30px;
+        width:180px;
+        div{
+            border-left:1px solid #ccc;border-bottom:1px solid #ccc;padding-left:10px;padding-top:20px;
+            span{
+                    width: 16px;
+                    height: 14px;
+                    display:inline-block;
+                    background: url(../imgaes/icon.png) no-repeat -195px -77px;
+                    margin-left: 6px;
+                   
+            }
+            height: 110px;
+            font-size:18px;line-height:24px;
+            button{
+                width:80px;border:1px solid #ccc;height:30px;
+                background: url(../imgaes/icon.png) no-repeat -195px -96px;
+            }
+        }
+       
     }
 }

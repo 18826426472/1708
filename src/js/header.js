@@ -1,4 +1,5 @@
 $(function($){
+    
     $('.all-goods .item').hover(function(){
 
         $(this).addClass('active').find('s').hide();
@@ -40,4 +41,6 @@ $(function($){
         "scrollTop": 0
     }, 500);
     })
+    var $nav=$('.nav')
+    console.log($nav)
 })
