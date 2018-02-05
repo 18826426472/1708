@@ -1,0 +1,377 @@
+#main {
+  background: #fff;
+}
+
+#main em {
+  width: 15px;
+  display: inline-block;
+  height: 15px;
+  background: url("../imgaes/list_icon.png") no-repeat;
+  background-position: -116px -7px;
+}
+
+#main h3 {
+  line-height: 15px;
+  height: 47px;
+  font-size: 14px;
+  background: #ccc;
+  padding-left: 80px;
+  padding-right: 100px;
+  padding-top: 20px;
+  margin-bottom: 13px;
+  z-index: -100px;
+}
+
+#main h3 input {
+  width: 150px;
+  height: 24px;
+}
+
+#main h3 span {
+  position: relative;
+}
+
+#main h3 em {
+  width: 15px;
+  display: inline-block;
+  height: 15px;
+  background: url("../imgaes/list_icon.png") no-repeat;
+  background-position: -116px -7px;
+  position: absolute;
+  top: 7%;
+  right: 2%;
+}
+
+#main .maincl {
+  margin-left: 80px;
+  background: #F3F3F3;
+  width: 190px;
+}
+
+#main .maincl h4 {
+  font-size: 20px;
+  border: 1px solid #DDDDDD;
+  padding: 5px 0px;
+}
+
+#main .maincl h4 em {
+  width: 26px;
+  height: 22px;
+  margin-left: 10px;
+  background-position: -30px -35px;
+}
+
+#main .maincl dl {
+  overflow: hidden;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  height: 28px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+#main .maincl dl em {
+  float: right;
+  background-position: -70px -37px;
+  width: 10px;
+}
+
+#main .maincl dl em.act {
+  float: right;
+  background-position: -60px -37px;
+  width: 10px;
+}
+
+#main .maincl dl.active {
+  background: #fff;
+  height: auto;
+}
+
+#main .maincl dl dd {
+  font-size: 15px;
+  line-height: 25px;
+  float: left;
+  width: 80px;
+  text-align: center;
+}
+
+#main .maincl .hotsale h4 {
+  font-size: 19px;
+  line-height: 25px;
+  background: #fff;
+  padding-left: 10px;
+  border: none;
+}
+
+#main .maincl .hotsale ul {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#main .maincl .hotsale ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#main .maincl .hotsale ul li p {
+  line-height: 30px;
+}
+
+#main .maincl .tj h4 {
+  background: #fff;
+  padding-left: 20px;
+  line-height: 35px;
+}
+
+#main .maincl .tj li {
+  background: #fff;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#main .maincl .tj li img {
+  height: 40px;
+  width: 73px;
+}
+
+#main .maincr {
+  margin-right: 40px;
+  width: 937px;
+  height: 400px;
+}
+
+#main .maincr .mainctop h5 {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0px;
+}
+
+#main .maincr .mainctop h5 span:nth-of-type(1) {
+  font-size: 17px;
+  float: left;
+}
+
+#main .maincr .mainctop h5 span:nth-of-type(2) {
+  width: 700px;
+}
+
+#main .maincr .mainctop h5 span:nth-of-type(2) a {
+  color: blue;
+  line-height: 16px;
+}
+
+#main .maincr .mainctop h5 span a {
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+}
+
+#main .maincr .mainctop h5 button {
+  background: #fff;
+}
+
+#main .maincr .mainctop h5.active {
+  border-bottom: 2px solid #FF6D00;
+}
+
+#main .maincr .mainctop .hidde {
+  display: none;
+}
+
+#main .maincr .mainctop .hidde.active {
+  display: block;
+}
+
+.maincr {
+  position: relative;
+}
+
+.maincr .mores {
+  border-bottom: none;
+  border-top: 1px solid #ccc;
+}
+
+.maincr .mores.active {
+  border-top: 2px solid #FF6D00;
+}
+
+.maincr .mores span {
+  border: 1px solid #ccc;
+  border-top: 1px solid #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 40%;
+  left: 38%;
+  line-height: 20px;
+  font-size: 16px;
+  background: #fff;
+}
+
+.maincr .mores span.active {
+  border: 1px solid #FF6D00;
+  border-top: none;
+}
+
+.maincr .mores span.on {
+  bottom: -14%;
+}
+
+.maincr .maincenter {
+  padding-top: 30px;
+}
+
+.maincr .maincenter h4 {
+  background: #CCC;
+  padding: 10px 30px;
+}
+
+.maincr .maincenter h4 span {
+  background: #fff;
+  line-height: 20px;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  padding-right: 30px;
+}
+
+.maincr .maincenter h4 span em {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+}
+
+.maincr .maincenter h4 span.fr {
+  background: #ccc;
+}
+
+.maincr .maincenter h4 span.fr button {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.maincr .maincenter h4 span.spi {
+  padding-left: 20px;
+}
+
+.maincr .maincenter h4 span.spi i {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.maincr .maincenter h4 span.spi.act {
+  padding-right: 10px;
+}
+
+.maincr .maincenter h4 span.spi.act i {
+  border: 1px solid red;
+  background: url("../imgaes/bg.png") no-repeat;
+}
+
+.maincr .maincenter h5 {
+  padding-left: 400px;
+  padding-right: 50px;
+  font-size: 18px;
+}
+
+.maincr .maincenter h5 span {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 5px;
+}
+
+.maincr .maincenter h5 span.active {
+  border: 1px solid red;
+}
+
+.maincr .maincenter h5 span:hover {
+  border: 1px solid red;
+}
+
+.maincr .maincenter h5 button {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px;
+}
+
+.maincr .maincenter h5 button:nth-of-type(1) {
+  display: none;
+}
+
+.maincr .maincenter h5 input {
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 30px;
+}
+
+.maincr .maincenter ul {
+  width: 940px;
+  height: 1000px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.maincr .maincenter ul li {
+  float: left;
+  margin-bottom: 40px;
+}
+
+.maincr .maincenter ul li img {
+  width: 180px;
+  height: 180px;
+}
+
+.maincr .maincenter ul li h6 {
+  font-size: 20px;
+  color: red;
+  line-height: 20px;
+}
+
+.maincr .maincenter ul li h6 i {
+  background: red;
+  color: #fff;
+  margin-right: 1px;
+}
+
+.maincr .maincenter ul li p {
+  line-height: 22px;
+  padding-bottom: 5px;
+}
+
+.maincr .maincenter ul li h1 {
+  line-height: 18px;
+  padding-bottom: 6px;
+}
+
+#main .maincenter .mainul button {
+  position: relative;
+  padding: 3px;
+  font-size: 15px;
+  line-height: 20px;
+  padding-left: 30px;
+  margin-right: 4px;
+  border: 1px solid #ccc;
+  padding-right: 5px;
+}
+
+#main .maincenter .mainul button em {
+  position: absolute;
+  top: 24%;
+  left: 10%;
+  background-position: -75px -7px;
+}
+
+#main .maincenter .mainul button em.addq {
+  background-position: -204px -7px;
+}
+
+#main .maincenter button:hover {
+  background: red;
+}

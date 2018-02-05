@@ -41,6 +41,5 @@ $(function($){
         "scrollTop": 0
     }, 500);
     })
-    var $nav=$('.nav')
-    console.log($nav)
+ 
 })

@@ -3,7 +3,8 @@ require.config({
         'jquery':'../lib/jquery-3.2.1',
         'head':'./head',
         'headser':'header',
-        'ban':'jquery.lxCarousel'
+        'ban':'jquery.lxCarousel',
+        'common':'common'
     },shim:{'head':['jquery'],
             'headser':['jquery','head'],
             'ban':['jquery'] 
