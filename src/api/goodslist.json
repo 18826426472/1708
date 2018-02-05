@@ -1,0 +1,45 @@
+[
+	{
+		"id":"G001",
+		"title":"麦德氏in-basic羊乳钙片150片",
+		"imgurl":"./imgaes/hot1.jpg",
+		"price":32,
+		"qty":1076
+	},
+	{
+		"id":"G002",
+		"title":"麦德氏in-basic羊乳钙片150片",
+		"imgurl":"./imgaes/hot2.jpg",
+		"price":32,
+		"qty":1076
+	},
+	{
+		"id":"G003",
+		"title":"麦德氏in-basic羊乳钙片150片",
+		"imgurl":"./imgaes/hot3.jpg",
+		"price":32,
+		"qty":1076
+	},
+	{
+		"id":"G004",
+		"title":"麦德氏in-basic羊乳钙片150片",
+		"imgurl":"./imgaes/hot4.jpg",
+		"price":32,
+		"qty":1076
+	},
+	{
+		"id":"G005",
+		"title":"麦德氏in-basic羊乳钙片150片",
+		"imgurl":"./imgaes/hot5.jpg",
+		"price":32,
+		"qty":1076
+	},
+	{
+		"id":"G006",
+		"title":"麦德氏in-basic羊乳钙片150片",
+		"imgurl":"./imgaes/hot1.jpg",
+		"price":32,
+		"qty":1076
+	}
+
+]

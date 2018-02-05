@@ -1,4 +1,4 @@
-$(function(){
+$(function($){
     $('.all-goods .item').hover(function(){
 
         $(this).addClass('active').find('s').hide();
@@ -34,7 +34,7 @@ $(function(){
          $headcar.removeClass('active')
     })
     $gotop=$('.gtop');
-    console.log($gotop)
+   
     $gotop.on('click',function(){
         $("body,html").animate({
         "scrollTop": 0
