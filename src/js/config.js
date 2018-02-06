@@ -4,10 +4,12 @@ require.config({
         'head':'./head',
         'headser':'header',
         'ban':'jquery.lxCarousel',
-        'common':'common'
+        'common':'common',
+        'gdsZoom':'jquery.gdsZoom'
     },shim:{'head':['jquery'],
             'headser':['jquery','head'],
-            'ban':['jquery'] 
+            'ban':['jquery'],
+            'gdsZoom':['jquery']
             }
 
 })

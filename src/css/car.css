@@ -2,7 +2,6 @@
   background: #F3F3F3;
   margin: 0 auto;
   width: 1000px;
-  height: 1000px;
 }
 
 #main .maintop {
@@ -72,4 +71,85 @@
 #main ul i {
   border: 1px solid #EFEFEF;
   font-size: 18px;
+}
+
+#main ul li {
+  margin-bottom: 10px;
+}
+
+#main ul li a i {
+  width: 117px;
+  display: inline-block;
+  margin-right: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+#main ul li em {
+  float: right;
+  height: 50px;
+  widows: 200px;
+  background: bule;
+  display: inline-block;
+  padding-top: 25px;
+  padding-right: 80px;
+}
+
+#main ul li em i {
+  width: 50px;
+  margin-right: 2px;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+  border: none;
+}
+
+.mainbottom {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid black;
+  margin-left: 132px;
+  height: 150px;
+  margin-right: 131px;
+}
+
+.mainbottom.active {
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  width: 1000px;
+}
+
+.mainbottom.active .mbotc {
+  margin-top: 20px;
+}
+
+.mainbottom button {
+  background: #fff;
+  margin-right: 20px;
+}
+
+.mainbottom .mbotc {
+  position: relative;
+  margin-top: 50px;
+}
+
+.mainbottom .mbotc p {
+  padding-right: 150px;
+  line-height: 20px;
+}
+
+.mainbottom .mbotc p:nth-of-type(2) {
+  padding-left: 240px;
+}
+
+.mainbottom .mbotc button {
+  position: absolute;
+  top: 0%;
+  left: 80%;
+  font-size: 17px;
+  background: #EE5533;
+  color: #fff;
+  line-height: 32px;
+  width: 80px;
 }

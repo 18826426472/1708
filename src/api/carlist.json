@@ -1,0 +1,41 @@
+﻿[
+	{
+		"id":"P001",
+		"name":"比瑞吉",
+		"title":"博美成犬粮天然狗粮2kg",
+		"img1":"../imgaes/goodhot1.jpg",
+		"weight":2,
+		"qty":1,
+		"price":200
+		
+	},
+	{
+		"id":"P002",
+		"name":"比瑞吉",
+		"title":"博美成犬粮天然狗粮1kg",
+		"img1":"../imgaes/goodhot1.jpg",
+		"weight":1,
+		"qty":1,
+		"price":10
+	},
+	{
+		"id":"P003",
+		"name":"比瑞吉",
+		"title":"博美成犬粮天然狗粮5kg",
+		"img1":"../imgaes/goodhot1.jpg",
+		"weight":5,
+		"qty":1,
+		"price":1000
+	},
+	{
+		
+		"id":"P004",
+		"name":"比瑞吉",
+		"title":"博美成犬粮天然狗粮2.7kg",
+		"img1":"../imgaes/goodhot1.jpg",
+		"weight":2.70,
+		"qty":1,
+		"price":300
+	}
+
+]

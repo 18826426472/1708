@@ -1,0 +1,185 @@
+h3{
+    background:#ccc;line-height:40px;font-size:16px;margin-bottom:10px;
+}
+.maint{
+    background:#fff;
+    .maintl{
+        border:1px solid #fff;width: 450px;height:458px;text-align:center;
+        .bigimg{
+            margin-left:30px;
+        }
+        img{
+            height: 300px;
+        }
+        ul{
+            width:450px;
+            li{
+                float:left;padding:5px;border:1px solid #fff;
+                img{
+                    width:70px;height: 70px;
+                }
+              &.active{
+                border:1px solid red;
+              }  
+              &:hover{
+                border:1px solid red;
+              }
+            }
+        }
+    }
+      
+      //                       <h3><button>立即购买</button><button><em></em>加入购物车</button><button><em></em>收藏商品</button></h3>
+     
+    .maintc{
+        padding:20px;
+        h2{
+            font-size:24px;line-height:32px;
+        }
+        .box{
+            background:#FCF3EE;margin-bottom:30px;
+            p{
+                font-size:14px;line-height:32px;
+                span{
+                    font-size:20px;
+                }
+                i{
+                    font-size:18px;
+                }
+            }
+        }
+        .box1{
+            line-height:32px;
+            h5{
+                margin-bottom:20px;
+                span{
+                    border:1px solid #cfc;display: inline-block;
+                    width: 30px;height: 20px;
+                &.active{
+                    border:1px solid red;
+                }
+                }
+            }
+            h4{
+                margin-bottom:20px;height:50px;
+                input{
+                    border:1px solid #cfc;width: 40px;height: 30px;text-align:center;float:left;
+                }
+                span{
+                    display: inline-block;width: 30px;height:28px;text-align:center;border:1px solid #cfc;
+                    background:#fff;float:left;line-height:25px;
+                }
+            }
+        }
+        h3{
+            padding-left:80px;background:#fff;
+            button{
+              float:left;
+            &:nth-of-type(1){
+                    width: 130px;
+                    height: 40px;
+                    background: #e53;
+                    color: #fff;
+                    font: 16px/40px "Microsoft YaHei";
+                    cursor: pointer;
+                    margin-right: 10px;
+                   
+            }
+            &:nth-of-type(2){
+                background: url(../imgaes/btn.png) no-repeat 0 0;
+                width: 150px;
+                height: 40px;
+                cursor: pointer;
+               margin-top:1px;
+            }
+            &:nth-of-type(3){
+                background: url(../imgaes/btn.png) no-repeat -163px -12px;
+                cursor: pointer;
+                margin: 13px 0 0 13px;
+                 width: 75px;
+             height: 30px;
+            }
+            }
+        }
+    }
+        .maintr{
+            ul{
+                li{
+                    border:1px solid #ccc;width: 300px;padding-bottom:20px;padding-left:20px;line-height:22px;
+                }
+            }
+        }
+}
+.hotsale{
+        width:200px;
+            h4{font-size:19px;line-height:25px;background:#fff;padding-left:10px;border:1px solid #ccc;border-bottom:1px solid #fff;}
+            ul{
+                background:#fff;border:1px solid #ccc;border-top:none;
+                li{
+                    padding-left:10px;
+                    padding-right:10px;
+                    p{
+                        line-height:30px;
+                    }
+                }
+            }
+        }
+.mainc-cr{
+    width: 1050px;padding:20px;
+    h4{
+        &.active{
+                position:fixed;top:0%;left:0%;width: 1200px;
+                button{
+                    display:block;
+                }
+        }
+        background:#ccc;
+        span{
+
+            padding:0px 20px;font-size:22px;line-height:34px;border-right:1px solid #cfc;display:inline-block;height: 32px;
+        &.active{
+            background:#fff;
+        }
+        }
+        button{
+                display:none;
+                float: right;
+                background: #e53;
+                color: #fff;
+                font: 16px/34px "Microsoft YaHei";
+                padding: 0 18px;
+               
+        }
+    }
+    
+}
+.maincbox{
+    border:1px solid #ccc;
+    &:nth-of-type(2){
+        height: 1000px;
+    }
+}
+
+    h1{
+    padding:10px;
+        font-size:20px;line-height:32px;
+    }
+    .maincboxt{
+       .divfirst{
+            width:200px;text-align:center;
+            i{
+                font-size:30px;color:red;
+            }
+       }
+       .divcen{
+           width: 300px;
+            p{
+                font-size: 13px;line-height: 23px;
+            }
+            div{
+                background:#E6E6E6;width:200px;height: 20px;position:relative;float:right;margin-bottom:3px;
+                &.gb{
+                    background:#EE5533;width: 25%;float:left;
+                }
+            }
+       }
+    }

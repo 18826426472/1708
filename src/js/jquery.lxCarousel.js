@@ -1,5 +1,6 @@
 ;(function($){
 	// $.prototype.lxCarousel = function(options){
+	console.log(666)
 	$.fn.lxCarousel = function(options){
 		var defaults = {
 			// 宽高

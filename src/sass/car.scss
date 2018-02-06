@@ -1,6 +1,6 @@
 #main{
     background:#F3F3F3;margin:0 auto;
-    width: 1000px;height: 1000px;
+    width: 1000px;
     .maintop{
         background:#F3F3F3;
         img{
@@ -44,5 +44,57 @@
             i{
                 border:1px solid #EFEFEF;font-size: 18px;
             }
+            li{
+                    margin-bottom:10px;
+                a{
+                    i{
+                        
+                        width:117px;display:inline-block;margin-right:10px;
+                        border:none;font-size: 14px;
+                    }
+                }
+                em{
+                    float:right;height:50px;widows: 200px;background: bule;display:inline-block;padding-top:25px;padding-right:80px;
+                    i{
+                        width: 50px;margin-right:2px;font-size: 12px;display:block;margin-bottom:5px;border:none;
+                    }
+                }
+            }
     }
 }
+.mainbottom{ 
+    &.active{
+        position:fixed;top:50%;left:0%;width:1000px;
+        .mbotc{
+            margin-top:20px;
+        }
+       } 
+    background:#fff;padding:20px;border:1px solid black;margin-left:132px;height:150px;
+    margin-right:131px;
+    button{
+        background:#fff;
+        margin-right:20px;
+    }
+    .mbotc{
+        position:relative;margin-top:50px;
+        p{  
+            padding-right:150px;line-height:20px;
+            &:nth-of-type(2){
+                padding-left:240px;
+            }
+        }
+        button{
+            position:absolute;top:0%;left:80%;
+            font-size:17px;background:#EE5533;
+            color:#fff;line-height:32px;width: 80px; 
+        }
+
+   }
+}
+
+// <div class='mbotc'>
+//          <p>已选择<i style='color:red;'>8</i>件商品（总重:<span>51.26</span>kg），总价（不含运费）:<span style='color:red;'>￥2193.5</span></p>
+//          <p>已节省：¥0.00</p>
+//          <p>总价= 商品总价: ¥<span>2193.50 </span>+ 全球购商品税费: ¥0.00</p>
+//          <button>去结算</button>
+//      </div>

@@ -1,0 +1,19 @@
+[
+	{
+		"id":"p001",
+		"name":"康多乐",
+		"bnum":101202,
+		"title":"成犬粮牛肉肝蔬菜狗粮",
+		"img1":"../imgaes/g001.jpg,../imgaes/g002.jpg,../imgaes/g003.jpg,../imgaes/g004.jpg,../imgaes/g005.jpg",
+		"img2":"../imgaes/bg001.jpg,../imgaes/bg002.jpg,../imgaes/bg003.jpg,../imgaes/bg004.jpg,../imgaes/bg005.jpg",
+		"price":289.00,
+		"oprice":339,
+		"saleqty":1076,
+		"com":300,
+		"manyi":3.4
+		
+	}
+	
+
+	
+]
