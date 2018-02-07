@@ -387,6 +387,3 @@ function type(data){
 }
 
 
-functino ajax(){
-	
-}

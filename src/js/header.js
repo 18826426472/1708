@@ -41,5 +41,19 @@ $(function($){
         "scrollTop": 0
     }, 500);
     })
+
+    var params = location.search;//'?id=g001'
+    params = params.slice(1);
+    if(params){
+     var $tologin=$('.tologin');
+      $('.tologin').find('span').html(params);
+      $tologin.on('click',function(){
+        return false;
+      })
+        
+    }
+  
+
+
  
 })

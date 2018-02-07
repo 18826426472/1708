@@ -13,6 +13,7 @@
                 buttons:true,page:true,type:'horizontal'
             });
              var $hotgood=$('#salegoods .hot ul');
+
             
              
 //待该部分
@@ -63,7 +64,7 @@
         var $pingjia=$('#mainFooter .Footerl ul');
         $.getJSON('../api/pingjia.json',pj);
         function pj(a){
-            console.log(a)
+            
             $pingjia.html(a.map(function(item){
 
                 return`<li data-id=${item.id}><div class='fl'>
@@ -78,6 +79,44 @@
 
             }).join(''))
         }
+    var $goodlists=$('.goodlists');
+     $.post('../api/idex.php',cba);
+     function cba(a){
+        var aa=JSON.parse(a);
+        var aaa=[];
+        for(let i=1;i<11;i++){
+        aaa.push(aa.filter(function(item){
+            return item['cages']==i;
+        }))
+            
+        }
+        var cons="";
+        aaa.forEach(function(item){
+          cons+="<div class='gooslists'><ul>"+item.map(function(itm){
+            return `<li data-id="${itm.id}"><img src="${itm.imgurl}" ><p>${itm.title}</p>
+                                            <p><span>￥${itm.price}</span><i>已售：${itm.qty}</i></p>
+                                        </li>`
+            }).join('');
+          cons+="</ul></div>"
+        })
+        console.log(cons)
+        $goodlists.eq(0).html(cons);
+       
+
+
+
+
+
+
+
+
+
+
+     }
+
+
+
+
      })($);
     })
 });

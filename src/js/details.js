@@ -91,7 +91,7 @@
            $maintcbox.next().find('i').html(opricee);
           var $maintrs=$('.maintr ul li p i');
          $maintrs.eq(0).html(a[0].name);
-          $maintrs.eq(1).html(a[0].saleqty);
+          $maintrs.eq(1).html(a[0].qty);
            $maintrs.eq(2).html(a[0].manyi);
             $maintrs.eq(3).html(a[0].com);
             $('.mainc-cr h4 i').html(a[0].com);
@@ -124,20 +124,106 @@
         })
 
         //根据楼层的索引 设置楼梯号的 样式
-        console.log($floor.index())
+       
         var indexs=$floor.index();
         if(indexs==-1){
           indexs=2;
         }
        $('.mainc-cr h4').find("span").eq(indexs-1).addClass("active").siblings().removeClass("active");
             
+            })
+         var $pj=$('#pj');
+          $.getJSON('../api/detailspin.json',csa);  
+          function csa(a){
+              var pa=a[0];
+              var arra=a.slice(1,6)
+              console.log(a);
+             
+            var $all=$('.maincboxt .divfirst .all');
             
+            $all.html(pa.all);
+            $all.closest('div').find('span').eq(0).find('i').html(pa.afen);
+            // .pre().find('i').html(pa.afen);
+           var allp=$all.closest('.divfirst').next().find('p');
+            allp.eq(0).find('i').html(pa.a);
+            allp.eq(1).find('i').html(pa.b);
+            allp.eq(2).find('i').html(pa.c);
+            var $allpro=$('.maincboxt .pro .gb');
+            var allpros=$('.maincboxt .pro .bg').width();
+            $allpro.eq(0).css({width:pa.a/pa.all*allpros});
+             $allpro.eq(1).css({width:pa.b/pa.all*allpros});
+              $allpro.eq(2).css({width:pa.c/pa.all*allpros});
+
+              var $maincboxi=$('.maincbox h3 span i');
+              $maincboxi.eq(0).html(pa.all);
+              $maincboxi.eq(1).html(pa.a);
+              $maincboxi.eq(2).html(pa.b);
+              $maincboxi.eq(3).html(pa.c);
+               $maincboxi.eq(4).html(pa.s);
+
+
+              var $pjs=$('#pj');
+              createlist(arra,0);
+            function createlist(arra,b){
+
+           $pjs.html(arra.map(function(item){
+                  let img2=item.img2.split(',');
+                  let imag='<ul>'+img2.map(function(ite){
+                      return`<li> <img src="${ite}"/></li>`
+                    }).join('')+'</ul>';
+
+                  return` <div class='clearfix boxs'>
+                                    <div class="fl boxs1">
+                                        <img src="${item.img1}" alt="" />
+                                        <p>${item.name}</p>
+                                        <p style='color=:red;'>${item.len}</p>
+                                    </div>
+                                <div class="fl boxs2">
+                                    <p>评分<i style='color:red;'>${item.fen}</i>分</p>
+                                    <p>内容<i>${item.title}</i></p>
+                                    晒单：
+                                    ${imag}
+                                </div>
+                         </div>` }).join('')) 
+
+             var lens=Math.ceil((a.length-1)/5);
+            
+             $('h2.spanx').html('');
+              for(let i=0;i<lens;i++){
+
+                  if(i==b){
+                     $('<span/>').addClass('active').html(i+1).appendTo('h2.spanx')
+                  }else{
+
+                  $('<span/>').html(i+1).appendTo('h2.spanx')
+                  }
+              }
+            }
+            
+            var hh5=$('h2.spanx');
+            console.log(hh5)
+            hh5.on('click','span',function(){
+                if($(this).index()==0){
+                  arra=a.slice(1,6)
+                }else{
+                  arra=a.slice(6)
+                 
+                }
+                let b=$(this).index();
+               
+                 createlist(arra,b);
+                
+                
+                 
+            })
+
+                        
+          }
     
 
 
 
 
-            })
 
 
   })

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../css/base.css" />
         <link rel="stylesheet" type="text/css" href="../css/login.css" />
+           <link rel="stylesheet" type="text/css" href="../css/foot.css" />
     </head>
     <body>
         <div class="login">
@@ -19,14 +20,15 @@
                         <h4>
                              <div class="yzm">
                                 <label >验证码：<input class='iyzm'type="text" /></label>
-                                <i class='err'></i>
+                                <i class=''></i>
                              </div>
                              <img src="../imgaes/vcode1.png" height="26" width="70" alt="" /><button style='color:blue;'>换一张</button>
                         </h4>
                         <p> <input type="checkbox" style='width:12px;' />自动登录 <a class='fr' href="#">免费注册</a> <a class='fr' href="#">忘记密码</a>
                         </p>
-                       
+                       <div class="vcodes">ugel</div>
                         <button class='dlogin'>登录</button>
+                        <h2 class='active'></h2>
                         <p class='p1'><span>使用合作网站帐号登录</span></p>
                         <h5>
                             <a href=""><span style='border-right:1px solid #ccc;'>支付宝</span></a>
@@ -38,6 +40,7 @@
                 </div>
             </div>
             <div id="footer"></div>
+             <script src="../js/require.js" type="text/javascript" data-main='../js/login'></script>
         </div>
     </body>
 </html>

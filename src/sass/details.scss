@@ -29,7 +29,7 @@ h3{
     }
       
       //                       <h3><button>立即购买</button><button><em></em>加入购物车</button><button><em></em>收藏商品</button></h3>
-     
+
     .maintc{
         padding:20px;
         h2{
@@ -171,7 +171,10 @@ h3{
             }
        }
        .divcen{
-           width: 300px;
+           width: 300px;position:relative;
+           .pro{
+                position:absolute;top:0%;left:50%;
+           }
             p{
                 font-size: 13px;line-height: 23px;
             }
@@ -183,3 +186,55 @@ h3{
             }
        }
     }
+           .plr{
+            margin-top:-20px;
+           }
+.maincbox{background:white;
+    h3{
+        padding:0 20px;background:white;border-bottom:1px solid #ccc;
+        font-size: 15px;
+        span{
+            height: 40px;display:inline-block;
+        }
+        span.active{
+            border-bottom:1px solid red;
+        }
+        select{
+            margin-top:10px;margin-right:40px;
+        }
+    }
+}
+#pj{   border:1px solid #ccc;
+    .boxs{
+        border:1px dashed #ccc;padding:10px 20px;
+        .fl{text-align:center;
+            img{
+                width:50px;
+            }
+            p{
+                line-height:20px;
+            }
+        }
+        ul{
+            padding-left:30px;
+            li{
+                float:left;margin-right:25px;
+            }
+        }
+        .boxs2{
+            text-align:left;
+            padding-left:100px;
+        }
+
+    }
+}
+h2.spanx{
+    text-align:center;padding-top:20px;
+    span{
+        line-height:22px;border:1px solid red;font-size:20px;margin-right:20px;width:40px;display:inline-block;
+    &.active{
+        background:red;
+    }
+    }
+}
+

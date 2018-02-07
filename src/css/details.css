@@ -256,6 +256,13 @@ h1 {
 
 .maincboxt .divcen {
   width: 300px;
+  position: relative;
+}
+
+.maincboxt .divcen .pro {
+  position: absolute;
+  top: 0%;
+  left: 50%;
 }
 
 .maincboxt .divcen p {
@@ -276,4 +283,86 @@ h1 {
   background: #EE5533;
   width: 25%;
   float: left;
+}
+
+.plr {
+  margin-top: -20px;
+}
+
+.maincbox {
+  background: white;
+}
+
+.maincbox h3 {
+  padding: 0 20px;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.maincbox h3 span {
+  height: 40px;
+  display: inline-block;
+}
+
+.maincbox h3 span.active {
+  border-bottom: 1px solid red;
+}
+
+.maincbox h3 select {
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+#pj {
+  border: 1px solid #ccc;
+}
+
+#pj .boxs {
+  border: 1px dashed #ccc;
+  padding: 10px 20px;
+}
+
+#pj .boxs .fl {
+  text-align: center;
+}
+
+#pj .boxs .fl img {
+  width: 50px;
+}
+
+#pj .boxs .fl p {
+  line-height: 20px;
+}
+
+#pj .boxs ul {
+  padding-left: 30px;
+}
+
+#pj .boxs ul li {
+  float: left;
+  margin-right: 25px;
+}
+
+#pj .boxs .boxs2 {
+  text-align: left;
+  padding-left: 100px;
+}
+
+h2.spanx {
+  text-align: center;
+  padding-top: 20px;
+}
+
+h2.spanx span {
+  line-height: 22px;
+  border: 1px solid red;
+  font-size: 20px;
+  margin-right: 20px;
+  width: 40px;
+  display: inline-block;
+}
+
+h2.spanx span.active {
+  background: red;
 }

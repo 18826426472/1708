@@ -9,7 +9,8 @@ require.config({
     },shim:{'head':['jquery'],
             'headser':['jquery','head'],
             'ban':['jquery'],
-            'gdsZoom':['jquery']
+            'gdsZoom':['jquery'],
+            'common':['jquery']
             }
 
 })
