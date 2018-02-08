@@ -2,7 +2,7 @@
 	{
 		"id":"h001",
 		"title":"虱敌喷剂120ml 灭虱子跳蚤蜱虫",
-		"imgurl":"../imgaes/goodhot1.jpg",
+		"imgurl":"./imgaes/goodhot1.jpg",
 		"price":332,
 		"qty":1076,
 		"name":"小宠EHD"
@@ -10,7 +10,7 @@
 	{
 		"id":"h002",
 		"title":"犬猫灭蜱虫跳蚤喷剂250ml 猫狗体外驱虫药",
-		"imgurl":"../imgaes/goodhot2.jpg",
+		"imgurl":"./imgaes/goodhot2.jpg",
 		"price":132,
 		"qty":2076,
 		"name":"福来恩 "
@@ -18,7 +18,7 @@
 	{
 		"id":"h003",
 		"title":" 幼犬粮肉类奶蔬菜谷物配方狗粮1.3kg",
-		"imgurl":"../imgaes/goodhot3.jpg",
+		"imgurl":"./imgaes/goodhot3.jpg",
 		"price":322,
 		"qty":4076,
 		"name":"宝路 "
@@ -26,7 +26,7 @@
 	{
 		"id":"h003",
 		"title":" 幼犬粮肉类奶蔬菜谷物配方狗粮1.3kg",
-		"imgurl":"../imgaes/goodhot3.jpg",
+		"imgurl":"./imgaes/goodhot3.jpg",
 		"price":322,
 		"qty":4076,
 		"name":"宝路 "
@@ -34,7 +34,7 @@
 	{
 		"id":"h003",
 		"title":" 幼犬粮肉类奶蔬菜谷物配方狗粮1.3kg",
-		"imgurl":"../imgaes/goodhot3.jpg",
+		"imgurl":"./imgaes/goodhot3.jpg",
 		"price":322,
 		"qty":4076,
 		"name":"宝路 "
@@ -42,7 +42,7 @@
 	{
 		"id":"h003",
 		"title":" 幼犬粮肉类奶蔬菜谷物配方狗粮1.3kg",
-		"imgurl":"../imgaes/goodhot3.jpg",
+		"imgurl":"./imgaes/goodhot3.jpg",
 		"price":322,
 		"qty":4076,
 		"name":"宝路 "

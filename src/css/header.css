@@ -58,7 +58,7 @@
 
 #header .headtop .sjb:hover div {
   display: block;
-  z-index: 500;
+  z-index: 900;
   background: #fff;
 }
 
@@ -333,4 +333,15 @@
   width: 150px;
   height: 760px;
   background: #fff;
+}
+
+.headcar
+div {
+  z-index: 990;
+}
+
+.headcar
+div img {
+  height: 40px;
+  width: 40px;
 }

@@ -350,6 +350,26 @@
   padding-bottom: 6px;
 }
 
+#main .maincenter .mainul li {
+  height: 305px;
+  width: 221px;
+  position: relative;
+}
+
+#main .maincenter .mainul li img {
+  z-index: 800;
+}
+
+#main .maincenter .mainul li div.active {
+  top: 0%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid red;
+  display: none;
+  z-index: 200;
+}
+
 #main .maincenter .mainul button {
   position: relative;
   padding: 3px;
@@ -358,13 +378,11 @@
   padding-left: 30px;
   margin-right: 4px;
   border: 1px solid #ccc;
+  z-index: 900;
   padding-right: 5px;
 }
 
 #main .maincenter .mainul button em {
-  position: absolute;
-  top: 24%;
-  left: 10%;
   background-position: -75px -7px;
 }
 
@@ -374,4 +392,10 @@
 
 #main .maincenter button:hover {
   background: red;
+}
+
+#allbutton {
+  border: none;
+  padding: 0px;
+  margin: 0px;
 }

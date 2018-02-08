@@ -223,13 +223,24 @@ h3{
 #main{
     .maincenter{
             .mainul{
+                li{ img{
+                    z-index:800;
+                }
+                    height: 305px;width: 221px;position:relative;
+                    div.active{
+                           top:0%;
+                     position:absolute;height: 100%;width: 100%;
+                        border:2px solid red;display:none;z-index:200;
+                    }
+
+                }
 
              button{
-                    position:relative;padding:3px;font-size:15px;line-height:20px;padding-left:30px;margin-right:4px;border:1px solid #ccc;
+
+                    position:relative;padding:3px;font-size:15px;line-height:20px;padding-left:30px;margin-right:4px;border:1px solid #ccc; z-index:900;
                     padding-right:5px;
                         em{
-                        position:absolute;top:24%;left:10%;
-                         background-position: -75px -7px;
+                        background-position: -75px -7px;
                          &.addq{
                                 background-position: -204px -7px;
                          }
@@ -241,4 +252,7 @@ h3{
             }
         }
     
+}
+#allbutton{
+    border:none;padding:0px;margin:0px;
 }

@@ -99,22 +99,59 @@
             }).join('');
           cons+="</ul></div>"
         })
-        console.log(cons)
-        $goodlists.eq(0).html(cons);
+        
+        $goodlists.html(cons);
+        var $allgoodr=$('.allgoodr');
+      
+
+        function randomNumber(min,max){
+            return parseInt(Math.random()*(max-min+1)) + min
+        }
+       for(let j=0;j<$allgoodr.length;j++){
+        let hotright=[]
+        for(let i=0;i<4;i++){
+            let num=randomNumber(0,aa.length-1);
+            hotright.push(aa[num])
+        }
        
+      $allgoodr.eq(j).html(hotright.map(function(item){
+
+       return`<ul>
+                     <li data-id='${item.id}'><img src="${item.imgurl}" alt=""><p>${item.title}</p>
+                            <p><span>￥${item.price}</span></p>
+                            </li>
+                 </ul>`
+      }).join(''))
+
+
+
+       }
+
+      $allgoodr.on('click','li',function(){
+       
+          console.log(this.dataset.id)
+            location.href = 'html/details.html ?'+this.dataset.id;
+            // +this.dataset.id
+      })
+    $goodlists.on('click','li',function(){
+        location.href = 'html/details.html ?'+this.dataset.id;
+    })
 
 
 
 
 
 
+    var news=$('.bpnew');
+    
 
-
+    news.myScroll({
+            speed:40, //数值越大，速度越慢
+            rowHeight:68 //li的高度
+        });
 
 
      }
-
-
 
 
      })($);

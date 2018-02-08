@@ -1,6 +1,6 @@
 ;require(['config'],function(){
     require(['jquery','headser','gdsZoom'],function($){
-       
+          var orderid='';
          $('#header').load('../html/header.html #header',function(){
                     $('.all-goods').hide();
                   
@@ -28,10 +28,10 @@
                  });
          $('#footer').load('../html/footer.html .comfooter');
 
-           $.getJSON('../api/good.json',cb);
-           function cb(a){
-              console.log(a)
-           }
+           // $.getJSON('../api/good.json',cb);
+           // function cb(a){
+           //    console.log(a)
+           // }
       var $binimg=$('.maintl .bigimg');
      
      
@@ -48,13 +48,34 @@
       });
 
 
-       var $hotsale=$('.hotsale ul');
-        $.getJSON('../api/hotsales.json',cb);
-        function cb(a){
+        var params = location.search;//'?id=g001'
+          params = params.slice(1);
+          if(params){
+            var pa={'id':params}
            
+           $.get('../api/details.php',pa,function(a){
+            
+              a=JSON.parse(a);
+             
+              orderid=a.data[0].id;
+              cbs(a.data);
+              cbx(a.data1)
+           })
+
+          }
+          else{
+
+            $.getJSON('../api/good.json',cbs);
+            
+            $.getJSON('../api/hotsales.json',cbx);
+          }
+        
+        function cbx(a){
+          
+          var $hotsale=$('.hotsale ul');
            $hotsale.html(a.map(function(item){
                 return`<li>
-                                <a href=""><img src="${item.imgurl}" height="170" width="170" alt="" /></a>
+                                <a href=""><img src=".${item.imgurl}" height="170" width="170" alt="" /></a>
                                 <p><i style='color:red;'>￥${item.price}</i>
                                 <span class='fr'>已售${item.qty}</span></p>
 
@@ -64,9 +85,8 @@
            }).join(''))
         }
 
-         $.getJSON('../api/good.json',cbs);
          function cbs(a){
-         
+          // console.log(a)
           var img1=a[0].img1.split(',');
           var img2=a[0].img2.split(',');
           $('.maintl .bigimg img').attr({
@@ -137,8 +157,7 @@
           function csa(a){
               var pa=a[0];
               var arra=a.slice(1,6)
-              console.log(a);
-             
+              
             var $all=$('.maincboxt .divfirst .all');
             
             $all.html(pa.all);
@@ -201,7 +220,7 @@
             }
             
             var hh5=$('h2.spanx');
-            console.log(hh5)
+           
             hh5.on('click','span',function(){
                 if($(this).index()==0){
                   arra=a.slice(1,6)
@@ -222,10 +241,22 @@
     
 
 
-
-
-
-
+        var addcar=$('.maintc .box1 h3 button').eq(1);
+       addcar.on('click',function(){
+       
+        var ord={
+          'id':orderid,
+          'name':'dy'
+        }
+          $.get('../api/order.php',ord,function(a){
+              if(a=='suc'){
+                var $cars=$('.headcar i');
+                var $car1=$('.head-rl span').eq(1).find('i');
+                var cons=$cars.html()*1+1;
+                $cars.html(cons);$car1.html(cons);
+              }
+          })
+       })
   })
 
 });

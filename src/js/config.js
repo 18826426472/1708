@@ -11,6 +11,7 @@ require.config({
             'ban':['jquery'],
             'gdsZoom':['jquery'],
             'common':['jquery']
+           
             }
 
 })

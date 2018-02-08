@@ -52,8 +52,60 @@ $(function($){
       })
         
     }
-  
+  var $spans=$(".nav-list li");
+    $spans.on('click',function(){
+       if(0<$(this).index()&&$(this).index()<8){
 
+        location.href="http://localhost:8051/html/list.html ?dog"
+       };
+       if($(this).index()==0){
+        location.href="http://localhost:8051/index.html"
+       }
+       if($(this).index()==9){
+         location.href="http://localhost:8051/html/car.html"
+       }
+      
+       return false;
+    })
+     var customname={'name':'dy'};
+        var arrs=[];
+        if(customname['name']){
+           
+            $.get('../api/car.php',customname,function(a){
+                    a=JSON.parse(a);
+                    a.map(function(item){
+                        
+                        item[0].qty=item[1];
+                        item[0].weight=2;
+                        arrs.push(item[0])
+                    })
+                 
+                  var allqy=0;
+                  var cons=arrs.map(function(item){
+                    allqy+=item.qty*1;
+                    return` <li>
+                    
+                    <img src=".${item.imgurl}" />
+                    <a href="">${item.name} <i>${item.qty}</i></a>
+                   <span style='color:red;'>${item.price}</span>
+                
+                    
+                 </li>`
+                  }).join('');
+                
+                  var $carsul=$('.headcar div ul');
+                  $carsul.html(cons)
+                  var $cars=$('.headcar a.on i');
+                  var $car1=$('.head-rl span').eq(1).find('i');
+                 
+                  $cars.html(allqy);
+                  $car1.html(allqy);
+
+
+
+            })
+
+         }   
 
  
 })

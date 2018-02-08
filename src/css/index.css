@@ -12,7 +12,7 @@
 #head-main #ban .banc {
   width: 800px;
   height: 450px;
-  background: blue;
+  background: #fff;
 }
 
 #head-main #ban .bancb ul {
@@ -219,14 +219,14 @@
 
 .allgoodr {
   height: 528px;
-  margin-top: -450px;
+  margin-top: -380px;
   width: 150px;
   padding-left: 5px;
 }
 
 .allgoodr ul li {
   line-height: 30px;
-  height: 70px;
+  height: 96px;
 }
 
 .allgoodr ul li img {

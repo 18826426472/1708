@@ -41,7 +41,7 @@
             
     }   
     .sjb:hover div{
-            display:block;z-index:500;background:#fff;
+            display:block;z-index:900;background:#fff;
     }
         .gzbp:hover .gzbpbox{display:block;z-index:500;background:#fff;}
         .gzbp{
@@ -228,6 +228,14 @@
 
             }
         
+    
+}
+.headcar
+    div{
+        z-index:990;
+        img{
+            height: 40px;width:40px;
+        }
     
 }
     
