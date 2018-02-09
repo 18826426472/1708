@@ -70,7 +70,7 @@ $(function($){
      var customname={'name':'dy'};
         var arrs=[];
         if(customname['name']){
-           
+          
             $.get('../api/car.php',customname,function(a){
                     a=JSON.parse(a);
                     a.map(function(item){
@@ -82,13 +82,14 @@ $(function($){
                  
                   var allqy=0;
                   var cons=arrs.map(function(item){
+                   
                     allqy+=item.qty*1;
-                    return` <li>
+                    return` <li class='actives'>
                     
                     <img src=".${item.imgurl}" />
-                    <a href="">${item.name} <i>${item.qty}</i></a>
-                   <span style='color:red;'>${item.price}</span>
-                
+                    ${item.name} <i>${item.qty}</i>件
+                   <span style='color:red;'>${item.price}元</span>
+          
                     
                  </li>`
                   }).join('');

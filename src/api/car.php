@@ -1,7 +1,24 @@
 <?php
-     require('connect.php');
+    
+     $id = isset($_GET['id']) ? $_GET['id'] : 'x';
+     if($id=='x'){
+
+      aa();
+      
+     }else{
+           require('connect.php');
+      $sql ="DELETE FROM orderss where goods='$id'";
+       $result= $conn->query($sql);
+       if($result){
+       aa();
+       }
+     };
+       
+    function aa(){
+       
+ require('connect.php');
      $username = isset($_GET['name']) ? $_GET['name'] : 'dy';
-      $sql = "select goods,qty from orderss where user='$username'";
+       $sql = "select goods,qty from orderss where user='$username'";
       $result = $conn->query($sql);
        $res= $result->fetch_all(MYSQLI_ASSOC);
 
@@ -16,7 +33,7 @@
                $res1= $result1->fetch_all(MYSQLI_ASSOC);
               array_push($res1,$res[$i]['qty']);
                array_push($as,$res1);
-        };
+        }
                 echo json_encode($as,JSON_UNESCAPED_UNICODE);
-             
+    }      
 ?>

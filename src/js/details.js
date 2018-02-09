@@ -34,7 +34,7 @@
            // }
       var $binimg=$('.maintl .bigimg');
      
-     
+     var gooda='';
       $('.maintl ul li').on('click','img',function(){
       
         $(this).closest('li').addClass('active').siblings().removeClass('active')
@@ -86,7 +86,7 @@
         }
 
          function cbs(a){
-          // console.log(a)
+          gooda=a;
           var img1=a[0].img1.split(',');
           var img2=a[0].img2.split(',');
           $('.maintl .bigimg img').attr({
@@ -238,25 +238,62 @@
 
                         
           }
-    
+      var $addcars=$('.addcars');
+     $addcars.on('click',function(){
+        var $carqty=$('.carqty');
+        var oldimg=$('.bigimg img');
+        var imgclone=oldimg.clone();
+                imgclone.css({
+                    zIndex:800,
+                    position:'absolute',
+                    left:oldimg.offset().left,
+                    top:oldimg.offset().top,
+                    width:oldimg.width()
+                });
+              imgclone.appendTo('body');
 
+          imgclone.animate({
+            top:$carqty.offset().top,
+            width:100,
+          }
+          ,function(){
+           imgclone.animate({ width:30,left:$carqty.offset().left},function(){
 
-        var addcar=$('.maintc .box1 h3 button').eq(1);
-       addcar.on('click',function(){
-       
-        var ord={
-          'id':orderid,
-          'name':'dy'
-        }
-          $.get('../api/order.php',ord,function(a){
+        var $cars=$('.headcar a.on i');
+                  var $car1=$('.head-rl span').eq(1).find('i');
+                  var cons=$cars.html()*1+1;
+                  $cars.html(cons);$car1.html(cons);
+              imgclone.remove();
+             var xx=$('<li></li>').addClass('actives').html(gooda.map(
+                function(item){
+                  orderid=item.id;
+                 
+                 return`<img src="${oldimg[0].src}" alt="" />${item.name} 1 件 <span style='color:red;'>${item.price}</span>`
+                }).join(''));
+              xx.appendTo('.headcar div ul');
+            
+               var ord={
+                  'id':orderid,
+                  'name':'dy'
+                }
+               $.get('../api/order.php',ord,function(a){
               if(a=='suc'){
-                var $cars=$('.headcar i');
-                var $car1=$('.head-rl span').eq(1).find('i');
-                var cons=$cars.html()*1+1;
-                $cars.html(cons);$car1.html(cons);
+                console.log('ok')
               }
           })
-       })
+
+
+
+
+             })
+            }
+           )
+         
+
+     })
+
+
+
   })
 
 });

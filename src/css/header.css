@@ -338,10 +338,27 @@
 .headcar
 div {
   z-index: 990;
+  overflow: scroll;
 }
 
 .headcar
 div img {
   height: 40px;
   width: 40px;
+}
+
+li.actives {
+  float: left;
+  width: 214px;
+  background: white;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+li.actives a {
+  display: inline-block;
+}
+
+li.actives img {
+  float: left;
 }

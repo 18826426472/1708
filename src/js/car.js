@@ -15,7 +15,9 @@
         if(customname['name']){
            
             $.get('../api/car.php',customname,function(a){
+
                     a=JSON.parse(a);
+                     arrs=[];
                     a.map(function(item){
                         
                         item[0].qty=item[1];
@@ -32,6 +34,7 @@
         }
         function cb(a){
            var allsqty=0;
+           // var toprice=0;var weight=0,toweight=0,toqty=0;
             $carul.html(a.map(function(item){
                 allsqty+=item.qty*1;
                 var weight=item.weight*item.qty;
@@ -39,7 +42,8 @@
                 toweight+=weight;
                  toqty+=toprice;
                  len++;
-                return` <li>
+                 
+                return` <li data-id='${item.id}'>
                     <input type="checkbox" />
                     <img src=".${item.imgurl}" />
                     <a href="">${item.name} <i>${item.title}${item.weight}kg*${item.qty}件</i></a>
@@ -54,6 +58,7 @@
                   var cons=allsqty;
                   $cars.html(cons);$car1.html(cons);
             var $allqty=$('.mbotc p i');
+            console.log(toweight,toqty)
             $allqty.html(len).next().html(toweight).next().html(toqty);
             $allqty.closest('.mbotc').find('p').eq(2).find('span').html(toqty);
            
@@ -74,7 +79,37 @@
         })
 
 
+      
+       $carul.on('click','li em i',function(){
+        
+            if($(this).index()==2){
+              var ind=$(this).closest('li')[0].dataset.id;
+              
+                $(this).closest('li').remove();
+            }
+            var datas={
+              "name":'dy',
+              "id":ind
 
+            }
+          $.get('../api/car.php',datas,function(a){
+              console.log(a)
+                a=JSON.parse(a);
+                  arrs=[];
+                    a.map(function(item){
+                        
+                        item[0].qty=item[1];
+                        item[0].weight=2;
+                        arrs.push(item[0])
+                    })
+                    console.log(arrs);
+                  // cb(arrs);
+
+
+          })
+
+
+       })
 
      })
 

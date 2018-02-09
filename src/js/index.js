@@ -142,14 +142,6 @@
 
 
 
-    var news=$('.bpnew');
-    
-
-    news.myScroll({
-            speed:40, //数值越大，速度越慢
-            rowHeight:68 //li的高度
-        });
-
 
      }
 
