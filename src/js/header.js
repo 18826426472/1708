@@ -56,13 +56,13 @@ $(function($){
     $spans.on('click',function(){
        if(0<$(this).index()&&$(this).index()<8){
 
-        location.href="http://localhost:8051/html/list.html ?dog"
+        location.href="./html/list.html ?dog"
        };
        if($(this).index()==0){
-        location.href="http://localhost:8051/index.html"
+        location.href="index.html"
        }
        if($(this).index()==9){
-         location.href="http://localhost:8051/html/car.html"
+         location.href="./html/car.html"
        }
       
        return false;
